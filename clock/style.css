@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    background-color: rgb(95, 92, 92);
+    color: lightgoldenrodyellow;
+    position: absolute;
+    display: flex;
+    top: 0%;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7) ;
+}
+img{
+    width: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 80px;
+    z-index: 2;
+}
+body{
+    background-color:lightcoral;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    position: relative;
+    background-color: lightgray;
+    width: 330px;
+    height: 330px;
+    border: 5px solid darkgray;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7) ;
+}
+.number div{
+  position: absolute;
+  font-size: 27px;
+font-weight: bold;
+color:lightgoldenrodyellow;
+text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.7);
+}
+.twelve{
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.three{
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.six{
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nine{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100%;
+    width: 100%;
+}
+.arrows::before{
+    content: "";
+width: 25px;
+height: 25px;
+background-color:darkgreen;
+border-radius: 50%;
+z-index: 4;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+} 
+.arrows div{
+    background-color: white;
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow:  1px 1px 2px rgba(0, 0, 0, 0.4);
+
+}
+.arrows .hour{
+    height: 80px;
+    transform: rotate(30deg);
+}
+.arrows .second{
+    background-color: goldenrod;
+    transform: rotate(250deg);
+}
+

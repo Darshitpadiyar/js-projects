@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(23, 49, 108) ;
+    color: #ffffff;
+}
+.container{
+    margin: 120px;
+     
+}
+.container .heading{
+    font-size: 30px;
+    line-height:150%;
+    margin-bottom: 10px;
+}
+.container .heading span{
+    color: rgb(33, 204, 84);
+    padding-bottom: 10px;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid ;
+}
+.box{
+    background-color: #ffffff;
+    margin:  25px 0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+.box input{
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.box .copy{
+    height: 20px;
+    margin: 15px;
+}
+.container button{
+    background-color: rgb(33, 204, 84);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 5px;
+    border: none;
+    height: auto;
+}
+.container button img{
+    height: 25px;
+    margin-right: 5px;
+}
